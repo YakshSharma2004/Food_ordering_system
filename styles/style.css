@@ -8,10 +8,41 @@
   --light-color: #777;
   --border: 0.2rem solid var(--black);
 }
+
 /* dark mode styles */
 body.dark-mode {
   background-color: #1e1e1e;
   color: #eee;
+}
+body.dark-mode .footer,
+body.dark-mode .footer .grid .box h3,
+body.dark-mode .footer .grid .box p,
+body.dark-mode .footer .grid .box a,
+body.dark-mode .credit {
+  background-color: #1e1e1e;
+  color: #eee;
+}
+
+/* Logo color in dark mode */
+body.dark-mode .header .flex .logo {
+  color: var(--yellow);
+}
+
+/* Icons (user, moon, bars) in dark mode */
+body.dark-mode .header .flex .icons > * {
+  color: #eee;
+}
+
+body.dark-mode .header .flex .icons > *:hover {
+  color: var(--yellow);
+}
+
+body.dark-mode .footer .grid .box a:hover {
+  color: var(--yellow);
+}
+
+body.dark-mode .credit span {
+  color: var(--yellow);
 }
 
 body.dark-mode .header,
@@ -1144,6 +1175,35 @@ body.dark-mode #accordion div {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+/* Ensure text in "latest dishes" is visible in dark mode */
+body.dark-mode .latest-recipe .box h3,
+body.dark-mode .latest-recipe .box .cat,
+body.dark-mode .latest-recipe .box .btn {
+  color: #fff;
+}
+
+body.dark-mode .latest-recipe .box {
+  background-color: #2c2c2c;
+  border-color: #444;
+}
+
+/* Dark mode fixes for hero slider content */
+body.dark-mode .hero .slide .content h3,
+body.dark-mode .hero .slide .content span {
+  color: #fff;
+}
+
+body.dark-mode .category .box h3 {
+  color: #fff;
+}
+
+body.dark-mode .category .box:hover {
+  background-color: #444;
+}
+
+body.dark-mode .category .box:hover h3 {
+  color: var(--yellow);
 }
 
 .loader img {

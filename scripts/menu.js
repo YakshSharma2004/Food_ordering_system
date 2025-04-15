@@ -61,4 +61,10 @@ function getQueryParam(name) {
     const category = getQueryParam("category");
     loadMenuItems(category);
   });
+  $(".box-container").sortable({
+    items: ".box",
+    placeholder: "sortable-placeholder",
+    cursor: "move",
+    opacity: 0.8
+  });
   

@@ -11,24 +11,24 @@ function applyTheme(theme) {
 // Toggle user profile dropdown
 $("#user-btn").click(function () {
     $("#user-profile").toggle();
-  });
+});
 
-  const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
-  if (loggedInUser) {
+const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+if (loggedInUser) {
     $("#user-name").text(loggedInUser.name || loggedInUser.email);
     $("#auth-buttons").hide();
     $("#logout-section").show();
-  } else {
+} else {
     $("#user-name").text("please login first!");
     $("#auth-buttons").show();
     $("#logout-section").hide();
-  }
-  $("#logout-btn").click(function () {
+}
+$("#logout-btn").click(function () {
     localStorage.removeItem("loggedInUser");
     alert("You have been logged out.");
     window.location.href = "index.html";
-  });
-    
+});
+
 
 // Load saved theme on page load
 $(document).ready(function () {
