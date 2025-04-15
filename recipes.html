@@ -1,0 +1,66 @@
+<!-- recipes.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipes</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+</head>
+
+<body>
+
+    <header class="header">
+        <section class="flex">
+            <a href="index.html" class="logo">yum-yum 😋</a>
+            <nav class="navbar">
+                <a href="index.html">home</a>
+                <a href="about.html">about</a>
+                <a href="menu.html">menu</a>
+                <a href="recipes.html">recipes</a>
+                <a href="contact.html">contact</a>
+            </nav>
+
+            <div class="icons">
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <i class="fas fa-moon" id="theme-toggle"></i>
+            </div>
+            <div class="profile" id="user-profile" style="display: none;">
+                <p class="name" id="user-name">please login first!</p>
+                <div class="flex" id="auth-buttons">
+                    <a href="login.html" class="btn">login</a>
+                    <a href="register.html" class="btn">register</a>
+                </div>
+                <div class="flex" id="logout-section" style="display: none;">
+                    <a href="profile.html" class="btn">profile</a>
+                    <button id="logout-btn" class="delete-btn">logout</button>
+                </div>
+            </div>
+
+        </section>
+    </header>
+
+    <div class="heading">
+        <h3>Discover Recipes</h3>
+        <p><a href="index.html">home</a> <span> / recipes</span></p>
+    </div>
+
+    <section class="products">
+        <h1 class="title">Random Recipes</h1>
+        <div class="box-container" id="recipes-container">
+            <p class="empty">Loading recipes...</p>
+        </div>
+        <div class="more-btn" style="text-align: center; margin-top: 2rem;">
+            <button id="load-random" class="btn">Load Random Recipes</button>
+        </div>
+
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./scripts/recipies.js"></script>
+    <script src="./scripts/common.js"></script>
+</body>
+
+</html>

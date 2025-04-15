@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile | Yum-Yum</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <section class="flex">
+            <a href="index.html" class="logo">yum-yum 😋</a>
+            <nav class="navbar">
+                <a href="index.html">home</a>
+                <a href="about.html">about</a>
+                <a href="menu.html">menu</a>
+                <a href="recipes.html">recipes</a>
+                <a href="contact.html">contact</a>
+            </nav>
+
+            <div class="icons">
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <i class="fas fa-moon" id="theme-toggle"></i>
+            </div>
+            <div class="profile" id="user-profile" style="display: none;">
+                <p class="name" id="user-name">please login first!</p>
+                <div class="flex" id="auth-buttons">
+                    <a href="login.html" class="btn">login</a>
+                    <a href="register.html" class="btn">register</a>
+                </div>
+                <div class="flex" id="logout-section" style="display: none;">
+                    <a href="profile.html" class="btn">profile</a>
+                    <button id="logout-btn" class="delete-btn">logout</button>
+                </div>
+            </div>
+
+        </section>
+    </header>
+
+    <div class="heading">
+        <h3>profile</h3>
+        <p><a href="index.html">home</a> <span> / profile</span></p>
+    </div>
+
+    <section class="user-details">
+        <div class="user">
+            <h2>User Information</h2>
+            <p><i class="fas fa-user"></i> <span id="user-name">Name</span></p>
+            <p><i class="fas fa-envelope"></i> <span id="user-email">Email</span></p>
+            <p><i class="fas fa-calendar"></i> <span id="user-dob">DOB</span></p>
+            <div class="flex">
+                <a href="index.html" class="btn">Back to Home</a>
+                <button id="logout-btn" class="delete-btn">Logout</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./scripts/common.js"></script>
+    <script>
+        $(document).ready(function () {
+            const user = JSON.parse(localStorage.getItem("loggedInUser"));
+            if (!user) {
+                alert("Please login first.");
+                window.location.href = "login.html";
+            } else {
+                $("#user-name").text(user.name || "N/A");
+                $("#user-email").text(user.email || "N/A");
+                $("#user-dob").text(user.dob || "N/A");
+            }
+
+            $("#logout-btn").click(function () {
+                localStorage.removeItem("loggedInUser");
+                alert("Logged out successfully!");
+                window.location.href = "index.html";
+            });
+        });
+    </script>
+</body>
+
+</html>

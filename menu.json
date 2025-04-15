@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "Delicious Pizza",
+        "price": 299,
+        "category": "Fast Food",
+        "description": "Classic margherita with extra cheese and fresh tomatoes.",
+        "image": "images/home-img-1.png"
+    },
+    {
+        "id": 2,
+        "name": "Cheesy Hamburger",
+        "price": 249,
+        "category": "Fast Food",
+        "description": "Juicy beef patty with melted cheddar and lettuce.",
+        "image": "images/home-img-2.png"
+    },
+    {
+        "id": 3,
+        "name": "Roasted Chicken",
+        "price": 349,
+        "category": "Chicken",
+        "description": "Herb-marinated chicken roasted to perfection.",
+        "image": "images/home-img-3.png"
+    },
+    {
+        "id": 4,
+        "name": "Grilled Paneer Wrap",
+        "price": 199,
+        "category": "Vegetarian",
+        "description": "Soft wrap filled with grilled paneer and crunchy veggies.",
+        "image": "images/paneer_wrap.jpg"
+    },
+    {
+        "id": 5,
+        "name": "French Fries",
+        "price": 99,
+        "category": "Fast Food",
+        "description": "Crispy golden fries served with ketchup.",
+        "image": "images/french.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Choco Lava Cake",
+        "price": 129,
+        "category": "Dessert",
+        "description": "Rich chocolate cake with a molten center.",
+        "image": "images/choco.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Cold Coffee",
+        "price": 89,
+        "category": "Drinks",
+        "description": "Chilled creamy coffee with ice and chocolate syrup.",
+        "image": "images/cold.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Spaghetti Bolognese",
+        "price": 319,
+        "category": "Main Dish",
+        "description": "Italian spaghetti with a rich tomato meat sauce.",
+        "image": "images/sphagetti.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Vegan Salad Bowl",
+        "price": 179,
+        "category": "Vegan",
+        "description": "Fresh greens, seeds, and plant-based dressing.",
+        "image": "images/saladBowl.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Chicken Biryani",
+        "price": 329,
+        "category": "Main Dish",
+        "description": "Fragrant rice cooked with spices and chicken.",
+        "image": "images/chickenBriyani.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Classic Lemonade",
+        "price": 59,
+        "category": "Drinks",
+        "description": "Refreshing blend of lemon, mint, and soda.",
+        "image": "images/lemonade.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Brownie Sundae",
+        "price": 149,
+        "category": "Dessert",
+        "description": "Warm brownie topped with vanilla ice cream and chocolate sauce.",
+        "image": "images/sundae.jpg"
+    }
+]

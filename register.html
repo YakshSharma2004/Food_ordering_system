@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | Yum-Yum</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <!-- jQuery UI CSS for Datepicker -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles/style.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <section class="flex">
+            <a href="index.html" class="logo">yum-yum 😋</a>
+            <nav class="navbar">
+                <a href="index.html">home</a>
+                <a href="about.html">about</a>
+                <a href="menu.html">menu</a>
+                <a href="recipes.html">recipes</a>
+                <a href="contact.html">contact</a>
+            </nav>
+
+            <div class="icons">
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <i class="fas fa-moon" id="theme-toggle"></i>
+            </div>
+            <div class="profile" id="user-profile" style="display: none;">
+                <p class="name" id="user-name">please login first!</p>
+                <div class="flex" id="auth-buttons">
+                    <a href="login.html" class="btn">login</a>
+                    <a href="register.html" class="btn">register</a>
+                </div>
+                <div class="flex" id="logout-section" style="display: none;">
+                    <a href="profile.html" class="btn">profile</a>
+                    <button id="logout-btn" class="delete-btn">logout</button>
+                </div>
+            </div>
+
+        </section>
+    </header>
+
+    <!-- Register Form -->
+    <section class="form-container">
+        <form id="register-form" novalidate>
+            <h3>Create Account</h3>
+            <input type="text" name="name" class="box" placeholder="Enter your name" required />
+            <input type="email" name="email" class="box" placeholder="Enter your email" required />
+            <input type="password" name="password" class="box" placeholder="Enter your password" required />
+            <input type="password" name="confirm_password" class="box" placeholder="Confirm your password" required />
+            <input type="text" name="dob" id="dob" class="box" placeholder="Select your birth date" required />
+
+            <input type="submit" class="btn" value="Register" />
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </form>
+    </section>
+
+    <!-- Scripts -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Validation Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+
+    <!-- jQuery UI (for DOB) -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+    <!-- Common and Register Scripts -->
+    <script src="./scripts/common.js"></script>
+    <script src="./scripts/register.js"></script>
+
+</body>
+
+</html>

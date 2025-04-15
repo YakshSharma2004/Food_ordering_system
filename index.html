@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home | Yum-Yum</title>
+
+   <!-- Swiper CSS for hero slider -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- Custom CSS -->
+   <link rel="stylesheet" href="./styles/style.css" />
+</head>
+
+<body>
+
+   <!-- Header -->
+   <header class="header">
+      <section class="flex">
+         <a href="index.html" class="logo">yum-yum 😋</a>
+         <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="menu.html">menu</a>
+            <a href="recipes.html">recipes</a>
+            <a href="contact.html">contact</a>
+         </nav>
+
+         <div class="icons">
+            <div id="user-btn" class="fas fa-user" ></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <i class="fas fa-moon" id="theme-toggle"></i>
+         </div>
+         <div class="profile" id="user-profile" style="display: none;">
+            <p class="name" id="user-name">please login first!</p>
+            <div class="flex" id="auth-buttons">
+               <a href="login.html" class="btn">login</a>
+               <a href="register.html" class="btn">register</a>
+            </div>
+            <div class="flex" id="logout-section" style="display: none;">
+               <a href="profile.html" class="btn">profile</a>
+               <button id="logout-btn" class="delete-btn">logout</button>
+            </div>
+         </div>
+
+      </section>
+   </header>
+
+   <!-- Hero Slider -->
+   <section class="hero">
+      <div class="swiper hero-slider">
+         <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+               <div class="content">
+                  <span>order online</span>
+                  <h3>delicious pizza</h3>
+                  <a href="menu.html" class="btn">see menus</a>
+               </div>
+               <div class="image">
+                  <img src="images/home-img-1.png" alt="Pizza">
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="content">
+                  <span>order online</span>
+                  <h3>cheesy hamburger</h3>
+                  <a href="menu.html" class="btn">see menus</a>
+               </div>
+               <div class="image">
+                  <img src="images/home-img-2.png" alt="Hamburger">
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="content">
+                  <span>order online</span>
+                  <h3>roasted chicken</h3>
+                  <a href="menu.html" class="btn">see menus</a>
+               </div>
+               <div class="image">
+                  <img src="images/home-img-3.png" alt="Chicken">
+               </div>
+            </div>
+         </div>
+         <div class="swiper-pagination"></div>
+      </div>
+   </section>
+
+   <!-- Food Categories -->
+   <section class="category">
+      <h1 class="title">food category</h1>
+      <div class="box-container">
+         <a href="menu.html?category=Fast Food" class="box">
+            <img src="images/cat-1.png" alt="Fast Food">
+            <h3>fast food</h3>
+         </a>
+         <a href="menu.html?category=Chicken" class="box">
+            <img src="images/cat-2.png" alt="Chicken">
+            <h3>chicken</h3>
+         </a>
+         <a href="menu.html?category=Drinks" class="box">
+            <img src="images/cat-3.png" alt="Drinks">
+            <h3>drinks</h3>
+         </a>
+         <a href="menu.html?category=Dessert" class="box">
+            <img src="images/cat-4.png" alt="Dessert">
+            <h3>desserts</h3>
+         </a>
+      </div>
+   </section>
+
+   <!-- Latest Dishes -->
+   <section class="products">
+      <h1 class="title">latest dishes</h1>
+      <div class="latest-recipe">
+         <p class="empty">no products added yet!</p>
+      </div>
+      <div class="more-btn">
+         <a href="menu.html" class="btn">view all</a>
+      </div>
+   </section>
+
+   <!-- Footer -->
+   <footer class="footer">
+      <section class="grid">
+         <div class="box">
+            <img src="images/email-icon.png" alt="email">
+            <h3>our email</h3>
+            <a href="mailto:shaikhanas@gmail.com">shaikhanas@gmail.com</a>
+            <a href="mailto:anasbhai@gmail.com">anasbhai@gmail.com</a>
+         </div>
+         <div class="box">
+            <img src="images/clock-icon.png" alt="clock">
+            <h3>opening hours</h3>
+            <p>07:00am to 10:00pm</p>
+         </div>
+         <div class="box">
+            <img src="images/map-icon.png" alt="location">
+            <h3>our address</h3>
+            <a href="#">mumbai, india - 400104</a>
+         </div>
+         <div class="box">
+            <img src="images/phone-icon.png" alt="phone">
+            <h3>our number</h3>
+            <a href="tel:1234567890">123-456-7890</a>
+            <a href="tel:1112223333">111-222-3333</a>
+         </div>
+      </section>
+      <div class="credit">&copy; copyright by <span>mr. web designer</span> | all rights reserved!</div>
+   </footer>
+
+   <!-- Swiper JS -->
+   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+   <!-- jQuery -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <!-- Common & Page-specific JS -->
+   <script src="./scripts/common.js"></script>
+   <script src="./scripts/index.js"></script>
+
+   <!-- Hero Slider Setup -->
+   <script>
+      var swiper = new Swiper(".hero-slider", {
+         loop: true,
+         grabCursor: true,
+         effect: "flip",
+         pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+         },
+      });
+   </script>
+
+</body>
+
+</html>

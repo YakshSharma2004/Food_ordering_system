@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+</head>
+
+<body>
+
+    <header class="header">
+        <section class="flex">
+            <a href="index.html" class="logo">yum-yum 😋</a>
+            <nav class="navbar">
+                <a href="index.html">home</a>
+                <a href="about.html">about</a>
+                <a href="menu.html">menu</a>
+                <a href="recipes.html">recipes</a>
+                <a href="contact.html">contact</a>
+            </nav>
+
+            <div class="icons">
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <i class="fas fa-moon" id="theme-toggle"></i>
+            </div>
+            <div class="profile" id="user-profile" style="display: none;">
+                <p class="name" id="user-name">please login first!</p>
+                <div class="flex" id="auth-buttons">
+                    <a href="login.html" class="btn">login</a>
+                    <a href="register.html" class="btn">register</a>
+                </div>
+                <div class="flex" id="logout-section" style="display: none;">
+                    <a href="profile.html" class="btn">profile</a>
+                    <button id="logout-btn" class="delete-btn">logout</button>
+                </div>
+            </div>
+
+        </section>
+    </header>
+    <section class="form-container">
+        <form id="login-form">
+            <h3>Login Now</h3>
+            <input type="email" name="email" placeholder="Enter your email" class="box" required />
+            <input type="password" name="password" placeholder="Enter your password" class="box" required />
+            <div style="position: relative;">
+                <input type="text" name="dob" id="dob" placeholder="Select your birth date" class="box" required />
+                <i class="fas fa-calendar-alt"
+                    style="position:absolute; right:15px; top:50%; transform:translateY(-50%); color:#aaa;"></i>
+            </div>
+            <input type="submit" value="Login" class="btn" />
+            <p>Don't have an account? <a href="register.html">Register here</a></p>
+        </form>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="./scripts/common.js"></script>
+    <script src="./scripts/login.js"></script>
+
+</body>
+
+</html>

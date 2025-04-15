@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+</head>
+
+<body>
+
+    <header class="header">
+        <section class="flex">
+            <a href="index.html" class="logo">yum-yum 😋</a>
+            <nav class="navbar">
+                <a href="index.html">home</a>
+                <a href="about.html">about</a>
+                <a href="menu.html">menu</a>
+                <a href="recipes.html">recipes</a>
+                <a href="contact.html">contact</a>
+            </nav>
+
+            <div class="icons">
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <i class="fas fa-moon" id="theme-toggle"></i>
+            </div>
+            <div class="profile" id="user-profile" style="display: none;">
+                <p class="name" id="user-name">please login first!</p>
+                <div class="flex" id="auth-buttons">
+                    <a href="login.html" class="btn">login</a>
+                    <a href="register.html" class="btn">register</a>
+                </div>
+                <div class="flex" id="logout-section" style="display: none;">
+                    <a href="profile.html" class="btn">profile</a>
+                    <button id="logout-btn" class="delete-btn">logout</button>
+                </div>
+            </div>
+
+        </section>
+    </header>
+
+    </header>
+
+    <div class="heading">
+        <h3>Contact Us</h3>
+        <p><a href="index.html">home</a> <span> / contact</span></p>
+    </div>
+
+    <section class="contact">
+        <div class="row">
+            <div class="image">
+                <img src="images/contact-img.svg" alt="Contact" />
+            </div>
+            <form id="contact-form">
+                <h3>Send Us a Message</h3>
+                <input type="text" name="name" placeholder="Your Name" class="box" required />
+                <input type="email" name="email" placeholder="Your Email" class="box" required />
+                <input type="tel" name="phone" placeholder="Your Phone Number" class="box" />
+                <textarea name="message" placeholder="Your Message" class="box" required></textarea>
+                <input type="submit" value="Send Message" class="btn" />
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <!-- Reuse your footer from index.html -->
+        <section class="grid">
+            <div class="box">
+                <img src="images/email-icon.png" alt="" />
+                <h3>our email</h3>
+                <a href="#">example@email.com</a>
+            </div>
+            <!-- Add other boxes as needed -->
+        </section>
+        <div class="credit">
+            &copy; copyright by <span>yum-yum 😋</span> | all rights reserved!
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+
+    <script src="./scripts/common.js"></script>
+    <script src="./scripts/contact.js"></script>
+</body>
+
+</html>
