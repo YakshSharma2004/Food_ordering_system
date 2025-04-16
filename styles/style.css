@@ -134,8 +134,6 @@ body.dark-mode .header .flex .icons > *:hover {
   margin-top: 1rem;
 }
 
-
-
 *::selection {
   background-color: var(--yellow);
   color: var(--black);
@@ -1149,7 +1147,7 @@ body.dark-mode #accordion div {
 .footer .grid .box a:hover {
   text-decoration: underline;
 }
-
+/* 
 .credit {
   padding: 3rem 2rem;
   text-align: center;
@@ -1158,7 +1156,7 @@ body.dark-mode #accordion div {
   font-size: 2rem;
   text-transform: capitalize;
   /* padding-bottom: 10rem; */
-}
+
 
 .credit span {
   color: var(--yellow);
